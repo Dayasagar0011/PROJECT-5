@@ -1,0 +1,234 @@
+<html>
+<head>
+    <title>Login</title>
+    <style>
+       @media only screen and (max-width: 600px) {
+            form {
+                width: 80%;
+            }
+        }
+
+        @media only screen and (max-width: 400px) {
+            form {
+                width: 90%;
+            }
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("bg5.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+            align-items: center;
+
+            
+        }
+
+        form {
+            width: 300px;
+            background: transparent;
+            padding: 20px;
+            margin: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(114, 103, 103, 0.1);
+            text-align:left;
+            align-items: center;
+            align-content: center;
+            margin-bottom: 100px;
+            border: 2px solid #000000;
+            backdrop-filter: blur(2px);
+            
+            
+
+        }
+        form:hover{
+          background-image: url("sample (1).jpg");
+          backdrop-filter: blur(20px);
+        }
+
+        h2 {
+            margin-bottom: 40px;
+            color: #ffffff;
+            font-style: italic;
+            margin-top: 10px;
+            text-decoration: underline;
+            text-decoration-color: #f70000;
+        } header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      background-image: url("bg of header.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+    }
+    
+nav {
+    background-color: #666;
+    padding: 10px;
+    text-align: center;
+}
+
+.nav-button {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #444;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+    section {
+      padding: 20px;
+      color: #eef2f3;
+    }
+    footer {
+      background-color: #56596a;
+      color: #fff;
+      text-align: center;
+      padding: 1px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+        label {
+            font-weight: bold;
+            color: #fffbfb;
+        
+        }
+
+        input[type="email"],
+        input[type="password"],
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            background-color: #578ac0;
+            color: #ffffff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #000000;
+        }
+        .login{
+            font-size: medium;
+            color: #000000;
+            text-align: center;
+            font-weight: 500;
+            margin: 25px 0 10px;
+            font-family: italic;
+        }
+        .login p a{
+            color: #000000;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .login p a:hover{
+            color: #2810f8;
+        }
+    </style>
+</head>
+<body><header>
+    <img src="LOGO.png" width="150" height="150" style="border: #eef2f3; border-radius: 200px; border-color: aqua;background: origin 10px; padding-box :10px;">
+  
+   
+    <h1>Welcome to Daya Photography</h1>
+    <p>Capturing Moments, Creating Memories</p>
+  </header>
+  
+  <nav>
+    <a class="nav-button" href="1.home page.html">Home</a>
+    <a class="nav-button" href="2.0 registartion page.html">Registration</a>
+    <a class="nav-button" href="3. services.html">Services</a>
+    <a class="nav-button" href="2.1login page.html"> Login</a>
+    <a class="nav-button" href="4. sample photos.html">Sample Photos</a>
+    <a class="nav-button" href="5. contact  us.html">Contact</a>
+  </nav>
+  
+  
+  <center>
+    <form id="loginForm" action="2.2 success.html">
+        <h2>Login </h2>
+        <label for="loginEmail">Email:<img src="icon g mail.png" width="25px" height="25px" style="display: inline-block; margin: 0 auto; margin-left: 210px; position: relative; top: 5px;"></label><br>
+        <input type="email" id="loginEmail" name="loginEmail" required autofocus><br>
+        <label for="loginPassword">Password:</label><br>
+        <input type="password" id="loginPassword" name="loginPassword" required><br>
+        <input type="submit" value="Login">
+        <input type="reset" value="Clear" style="margin-left: 35%; border-radius: 5px; border-color: rgb(255, 255, 255); width: 100px; height: 30px; margin-top: 10px;">
+        <div class="login">
+            <p>
+                Don't have an account?<a href="2.0 registartion page.html"> Register</a>
+            </p>
+        </div>
+    </form>
+  </center>
+  <br>
+</body>
+
+<footer>
+    <img src="LOGO 1.png" width="50px" height="50px" style="display: inline-block; margin: 0 auto; margin-left: 5px; position: relative; top: 5px;">
+
+    <p>&copy; 2024 Daya Creations. All rights reserved.</p>
+  </footer>
+  <script>
+    // Function to validate email format
+    function validateEmail(email) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+    }
+
+    // Function to validate password length
+    function validatePassword(password) {
+        return password.length >= 8;
+    }
+
+    // Function to handle form submission
+    function validateForm() {
+        const email = document.getElementById('loginEmail').value;
+        const password = document.getElementById('loginPassword').value;
+
+        // Validate email
+        if (!validateEmail(email)) {
+            alert('Please enter a valid email address.');
+            return false;
+        }
+
+        // Validate password length
+        if (!validatePassword(password)) {
+            alert('Password must be at least 8 characters long.');
+            return false;
+        }
+
+        return true; // Form submission allowed
+    }
+
+    // Add event listener to the form submission
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+        if (!validateForm()) {
+            event.preventDefault(); // Prevent form submission if validation fails
+        }
+    });
+</script>
+  
+</html>

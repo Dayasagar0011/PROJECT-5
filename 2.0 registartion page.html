@@ -1,0 +1,226 @@
+
+<html >
+<head>
+
+
+    <title>Registration Form</title>
+    <style>
+       @media only screen and (max-width: 600px) {
+            #registrationForm {
+                width: 80%;
+            }
+        }
+
+        @media only screen and (max-width: 400px) {
+            #registrationForm {
+                width: 90%;
+            }
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("bg5.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #registrationForm {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background: transparent;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(68, 44, 44, 0.1);
+            border: 3px solid #ccc;
+        }
+        #registrationForm:hover{
+            backdrop-filter: blur(20px);
+          background-image: url("sample (1).jpg");
+        }
+
+        h2 {
+            color: #f2e9f8;
+            text-align: center;
+            margin-bottom: 20px;
+            text-decoration: underline;
+            text-decoration-color: #fa1212;
+            font-style: oblique;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #ffffff;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #000000;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #322869;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: underline;
+            color: #ffffff;
+        }
+
+        input[type="submit"]:hover{
+            background-color: #be6464;
+        }
+        header {
+      background-color: #2c2929;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      background-color: #f9f9f9;
+            background-image: url("bg of header 2.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+          
+    }
+
+nav {
+    background-color: #666;
+    padding: 10px;
+    text-align: center;
+}
+
+.nav-button {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #444;
+    color: #fff;
+    text-decoration: none;
+}
+
+input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+            margin-top: auto;
+        }
+    footer {
+      background-color: #666;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="LOGO.png" width="150" height="150" style="border: #eef2f3; border-radius: 200px; border-color: aqua;background: origin 10px; padding-box :10px;">
+      
+       
+        <h1>Welcome to Daya Photography</h1>
+        <p>Capturing Moments, Creating Memories</p>
+      </header>
+      <nav>
+        <a class="nav-button" href="1.home page.html">Home</a>
+        <a class="nav-button" href="2.0 registartion page.html">Registration</a>
+        <a class="nav-button" href="2.1login page.html"> Login</a>
+        <a class="nav-button" href="3. services.html">Services</a>
+        <a class="nav-button" href="4. sample photos.html">Sample Photos</a>
+        <a class="nav-button" href="5. contact  us.html">Contact</a>
+      </nav>
+      <br><br><br>
+    <form id="registrationForm" onsubmit="return validateForm()" action="2.1login page.html">
+        <h2>Registration Form</h2>
+        <label for="firstName">First Name: <img src="icon name.png" width="25px" height="25px" style="display: inline-block; margin: 0 auto; margin-left: 280px; position: relative; top: 5px;"></label>
+        <input type="text" id="firstName" name="firstName" placeholder=" Enter your first name" required>
+        <label for="lastName">Last Name:<img src="home.png" width="25px" height="25px" style="display: inline-block; margin: 0 auto; margin-left: 285px; position: relative; top: 5px;"></label>
+        <input type="text" id="lastName" name="lastName" placeholder=" Enter your Last  name" required>
+        <label for="email">Email:<img src="icon g mail.png" width="25px" height="25px" style="display: inline-block; margin: 0 auto; margin-left: 320px; position: relative; top: 5px;"></label>
+        <input type="email" id="email" name="email"placeholder="@gmail.com" required>
+        <label for="gender">Gender:<img src="icon gender.png" width="25px" height="25px" style="display: inline-block; margin: 0 auto; margin-left: 310px; position: relative; top: 5px;"></label required>
+        <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        <label for="loginPassword">Password:</label>
+        <input type="password" id="loginPassword" name="loginPassword" required><br>
+         <label for="lastName"> Phone number :<img src="icon phone.png" width="25px" height="25px" style="display: inline-block; margin: 0 auto; margin-left: 250px; position: relative; top: 5px;"></label>
+         <input type="tel"name="personal " placeholder=" Enter your mobile number" required pattern="[0-9]{10}" style="margin-left: 15%; width: 280; border-radius: 7px; height: 30px;" maxlength="10">
+       <br>
+       <br>
+
+        <input type="submit" value="Register">
+    </form>
+</body>
+<br><br><br><br><br><br>
+<footer>
+    <img src="LOGO 1.png" width="50px" height="50px" style="display: inline-block; margin: 0 auto; margin-left: 5px; position: relative; top: 5px;">
+    <p>&copy; 2024 Daya Creations. All rights reserved.</p>
+  </footer>
+  
+  <script>
+    function validateForm() {
+        var firstName = document.getElementById('firstName').value;
+        var lastName = document.getElementById('lastName').value;
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('loginPassword').value;
+        var letterOnlyRegex = /^[A-Za-z]+$/;
+        var emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+    
+        if (!firstName.match(letterOnlyRegex)) {
+            alert('First name must contain letters only and no special characters are allowed.');
+            return false;
+        }
+    
+        if (!lastName.match(letterOnlyRegex)) {
+            alert('Last name must contain letters only and no special characters are allowed.');
+            return false;
+        }
+    
+        if (!email.match(emailRegex)) {
+            alert('Please enter a valid email address.');
+            return false;
+        }
+        
+        if (!validatePassword(password)) {
+            alert('Password must be at least 8 characters long.');
+            return false;
+        }
+        
+        return true;
+    }
+    
+    function validatePassword(password) {
+        return password.length >= 8;
+    }
+</script>
+
+    
+
+</html>
